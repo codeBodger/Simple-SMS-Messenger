@@ -60,6 +60,7 @@ android {
         checkReleaseBuilds false
         abortOnError false
     }
+    namespace 'com.simplemobiletools.smsmessenger'
 }
 
 dependencies {
