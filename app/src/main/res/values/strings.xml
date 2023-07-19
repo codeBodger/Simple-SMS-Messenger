@@ -72,6 +72,7 @@
     </plurals>
     <!-- Lists, could be translated, but I don't know (most) other languages -->
     <string name="manage_lists" translatable="false">Manage Lists</string>
+    <string name="list_management_title" translatable="false">Create and Edit Lists</string>
     <!-- Settings -->
     <string name="keyword">Keyword</string>
     <string name="blocked_keywords">Blocked keywords</string>

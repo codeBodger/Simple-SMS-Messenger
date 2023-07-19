@@ -266,6 +266,7 @@ class ThreadActivity : SimpleActivity() {
             }
 
             when (menuItem.itemId) {
+                R.id.manage_lists -> listManagement()
                 R.id.block_number -> tryBlocking()
                 R.id.delete -> askConfirmDelete()
                 R.id.rename_conversation -> renameConversation()
@@ -861,6 +862,13 @@ class ThreadActivity : SimpleActivity() {
         }
 
         return userPreferredSimIdx ?: senderPreferredSimIdx ?: systemPreferredSimIdx ?: 0
+    }
+
+    private fun listManagement() {
+        hideKeyboard()
+        Intent(this, ListManagementActivity::class.java).apply {
+            startActivity(this)
+        }
     }
 
     private fun tryBlocking() {
